@@ -21,7 +21,7 @@ function App() {
   return (
     <div>
       <StarsCanvas />
-      {/* <BrowserRouter basename="/Structural-OCR-Frontend">
+      <BrowserRouter basename="/Structural-OCR-Frontend">
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<About />} />
@@ -37,7 +37,7 @@ function App() {
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/ara" element={<Error404 />} />
         </Routes>
-      </BrowserRouter> */}
+      </BrowserRouter>
     </div>
   );
 }
