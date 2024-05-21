@@ -35,7 +35,7 @@ function App() {
           <Route path="/login" element={<LoginRedirect />} />
           <Route path="/signup" element={<SigunupRedirect />} />
           <Route path="/pricing" element={<Pricing />} />
-          <Route path="/ara" element={<Error404 />} />
+          <Route path="*" element={<Error404 />} />
         </Routes>
       </BrowserRouter>
     </div>
