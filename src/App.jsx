@@ -21,7 +21,7 @@ function App() {
   return (
     <div>
       <StarsCanvas />
-      <BrowserRouter basename={import.meta.env.VITE_APP_BASENAME}>
+      <BrowserRouter basename="/Structural-OCR-Frontend">
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<About />} />
