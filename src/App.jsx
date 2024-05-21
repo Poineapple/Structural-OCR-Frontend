@@ -38,7 +38,6 @@ function App() {
           <Route path="/ara" element={<Error404 />} />
         </Routes>
       </BrowserRouter> */}
-      <LandingPage />
     </div>
   );
 }
