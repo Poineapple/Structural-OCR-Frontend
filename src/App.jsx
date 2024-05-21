@@ -21,18 +21,21 @@ function App() {
   return (
     <div>
       <StarsCanvas />
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.VITE_APP_BASENAME}>
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/home" element={<Conversion />} />
           <Route path="/documentation" element={<DocumentationLegacy />} />
           <Route path="/doc" element={<Documentation />} />
-          <Route path="/documentationeditor" element={<DocumentationEditor />} />
+          <Route
+            path="/documentationeditor"
+            element={<DocumentationEditor />}
+          />
           <Route path="/login" element={<LoginRedirect />} />
           <Route path="/signup" element={<SigunupRedirect />} />
-          <Route path="/pricing" element={<Pricing/>} />
-          <Route path="/ara" element={<Error404/>} />
+          <Route path="/pricing" element={<Pricing />} />
+          <Route path="/ara" element={<Error404 />} />
         </Routes>
       </BrowserRouter>
     </div>
